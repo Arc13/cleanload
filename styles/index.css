@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Signika');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+p,
+.main_text_container,
+.rules_table {
+  font-size: 0.9rem;
+}
+
+h1 {
+  font-size: 2.2rem;
+}
+
+.percentage_text {
+  font-size: 21px;
+}
+
+.staff_name {
+  font-size: 0.8rem;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+   line-height: 1.45;
+}
+
+.rounded {
+  overflow: hidden;
+}
+
+.shadow {
+  box-shadow: 5px 3px 30px black;
+}
+
+.centered {
+  text-align: center;
+}
+
+.title {
+  font-style: normal;
+  text-align: center;
+  margin: 0px;
+  font-weight: normal;
+  font-family: 'Signika', 'Open Sans', sans-serif;
+  text-transform: uppercase;
+}
+
+.main_text_container {
+  padding: 8px;
+}
+
+.bubble_header {
+  position: relative;
+  overflow: hidden;
+}
+
+.bh_split_left {
+  float: left;
+  position: relative;
+}
+
+.bh_split_right {
+  float: right;
+  position: relative;
+}
+
+.bh_split_middle {
+  text-align: center;
+  position: relative;
+}
+
+#bh_server_name {
+  font-size: 1.3rem;
+  overflow-wrap: break-word;
+}
+
+.bhi_text {
+  font-size: 0.9rem;
+}
+
+.bh_image {
+  border-radius: 5px;
+  width: 64px;
+  height: 64px;
+  display: inline;
+  margin: 4px;
+  vertical-align: middle;
+}
+
+.bh_pseudo {
+  margin: 0;
+  display: inline;
+  vertical-align: middle;
+  font-weight: bold;
+}
+
+#bhi_infos {
+  display: none;
+}
+
+.bh_icon {
+  margin-right: 8px;
+}
+
+.bh_icon:not(:first-child) {
+  margin-left: 16px;
+}
+
+.bubble_main {
+  text-align: center;
+  width: 100%;
+}
+
+.blur_bg {
+  /*background-color: rgba(255, 255, 255, 0.6);*/
+  position: relative;
+}
+
+.blur_bg * {
+  position: relative;
+  z-index: 1;
+}
+
+.backgrounds,
+.bubble_bg_overlay,
+.mcc_container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.bubble_blur_bg,
+.bubble_bg_overlay {
+  border-radius: inherit;
+}
+
+.main_background {
+  position: fixed;
+}
+
+.backgrounds {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-transition: opacity 1s ease-in-out;
+}
+
+.bubble_bg_overlay {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.bubble_info {
+  width: 82%;
+  padding-bottom: 1px;
+  margin: 35px auto 0;
+}
+
+#mt_music {
+  padding: 4px;
+  border-top: solid 1px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+#mtm_title {
+  margin-left: 8px;
+  font-style: italic;
+}
+
+.bubble_staff td > * {
+  vertical-align: middle;
+}
+
+.staff_table_left,
+.staff_table_right {
+  width: 48%;
+  border-collapse: collapse;
+  margin-bottom: 14px;
+  table-layout: fixed;
+  overflow: hidden;
+}
+
+.staff_table_left {
+  float: left;
+  text-align: left;
+}
+
+.staff_table_right {
+  float: right;
+  text-align: right;
+}
+
+.staff_item {
+  word-wrap: break-word;
+  font-size: 0.8rem;
+}
+
+.rule_number {
+  width: 32px;
+}
+
+.staff_image {
+  width: 40px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.staff_table_left .staff_image {
+  float: left;
+  margin-right: 4px;
+}
+
+.staff_table_right .staff_image {
+  float: right;
+  margin-left: 4px;
+}
+
+.staff_name {
+  margin: 0px 4px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.rules_table {
+  width: 100%;
+  margin-bottom: 14px;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.rules_table tr:first-child .rule_number,
+.staff_table_left tr:first-child .staff_item {
+  border-top-right-radius: 4px;
+}
+
+.rules_table tr:last-child .rule_number,
+.staff_table_left tr:last-child .staff_item {
+  border-bottom-right-radius: 4px;
+}
+
+.staff_table_right tr:first-child .staff_item {
+  border-top-left-radius: 4px;
+}
+
+.staff_table_right tr:last-child .staff_item {
+  border-bottom-left-radius: 4px;
+}
+
+.rule_text {
+  text-align: left;
+  font-weight: normal;
+  padding-left: 8px;
+  padding-right: 8px;
+  word-wrap: break-word;
+}
+
+.prgbar_container {
+  margin: 35px auto 0px;
+  width: 40%;
+}
+
+.prgbar_container {
+  height: 30px;
+}
+
+.bubble_prgbar_bg {
+  height: inherit;
+  width: inherit;
+  position: absolute;
+}
+
+.bubble_prgbar {
+  width: 0;
+  transition: width 0.2s;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-radius: inherit;
+}
+
+.loading_text {
+  position: relative;
+  margin: 0px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin-left: 8px;
+  margin-right: 32px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.percentage_text {
+  position: relative;
+  margin: 0px;
+  float: right;
+  opacity: 0.8;
+  display: inline-block;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.percentage_text,
+.loading_text {
+  z-index: 1;
+}
+
+.music_container {
+  height: 100%;
+  border-spacing: 0;
+}
+
+.music_container::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.music_title {
+  font-size: 1.05rem;
+  font-style: italic;
+  margin: 0;
+  text-align: center;
+}
+
+.music_infos {
+  margin: 0;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+#bg_yt_music {
+  display: none;
+}
+
+.bubble_split_center {
+  width: 40%;
+  padding-bottom: 1px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: initial;
+}
+
+.bubble_split_center:first-child {
+  margin-top: 16px;
+}
+
+.contact_container {
+  width: 100%;
+  table-layout: auto;
+  padding: 0px 8px;
+  border-spacing: 0;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+.contact_container tbody {
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+}
+
+.contact_container td {
+  padding: 4px;
+}
+
+.cc_infos {
+  white-space: nowrap;
+  text-align: end;
+}
+
+.cc_icon {
+  margin-right: 8px;
+  margin-left: 4px;
+}
+
+.cc_title {
+  font-weight: bold;
+}
+
+.cc_link {
+  width: 100%;
+  padding-left: 8px;
+  text-align: left;
+}
+
+.mc_content {
+  height: 100%;
+  width: 100%;
+  display: table;
+  margin-bottom: 8px;
+}
+
+.mc_content .title {
+  display: table-row;
+}
+
+#mc_text {
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+#mc_text i {
+  font-size: 1.05rem;
+}
+
+.bm_row {
+  display: table;
+  width: 80%;
+  box-sizing: border-box;
+  margin: 16px auto;
+  border-spacing: 16px 0px;
+  table-layout: fixed;
+}
+
+.bm_row > div {
+  display: table-cell;
+}

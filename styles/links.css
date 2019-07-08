@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Signika');
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+p {
+  font-size: 0.9rem;
+}
+
+h1 {
+  font-size: 7em;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+   line-height: 1.45;
+}
+
+.blur_bg {
+  position: relative;
+}
+
+.blur_bg * {
+  position: relative;
+  z-index: 1;
+}
+
+.rounded {
+  overflow: hidden;
+}
+
+.shadow {
+  box-shadow: 5px 3px 30px black;
+}
+
+.title {
+  font-style: normal;
+  text-align: center;
+  margin: 0px;
+  font-weight: normal;
+  font-family: 'Signika', 'Open Sans', sans-serif;
+  opacity: 0.87;
+  text-transform: uppercase;
+}
+
+.backgrounds,
+.bubble_bg_overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.bubble_blur_bg,
+.bubble_bg_overlay {
+  border-radius: inherit;
+}
+
+.main_background {
+  position: fixed;
+}
+
+.backgrounds {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-transition: opacity 1s ease-in-out;
+}
+
+.bubble_bg_overlay {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.dark_mode .bubble_bg_overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.dark_mode {
+  color: white;
+}
+
+.bubble_links {
+  overflow: auto;
+}
+
+.bl_holder {
+  margin: 8px;
+  display: grid;
+  grid-template-columns: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  font-size: 4em;
+}
+
+.bubble_links.dark_mode .bl_holder {
+  background-color: rgba(0, 0, 0, 0.65);
+  color: white;
+}
+
+.blh_link {
+  color: inherit;
+  text-decoration: none;
+  text-align: center;
+  padding: 0.2em 0;
+}
+
+.blh_type {
+  margin-left: 0.4em;
+  font-weight: bold;
+}
+
+.blh_url {
+  margin: 0;
+  margin-top: 4px;
+  font-size: 0.5em;
+}
+
+.blh_link:not(:last-child) {
+  border-bottom: solid 1px rgba(97, 97, 97, 0.3);
+}
+
+.bubble_links.dark_mode .blh_link:not(:last-child) {
+  border-bottom: solid 1px rgba(158, 158, 158, 0.3);
+}
+
+@media only screen and (max-device-width: 768px) {
+  .bubble_links {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .backgrounds,
+  .bubble_bg_overlay {
+    position: fixed;
+  }
+}
+
+@media only screen and (orientation: landscape) and (max-device-width: 768px) {
+  h1 {
+    font-size: 4em;
+  }
+
+  .bl_holder {
+    font-size: 2em;
+  }
+
+  .blh_url {
+    font-size: 0.7em;
+  }
+}
+
+@media only screen and (min-device-width: 768px) {
+  body {
+    display: flex;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .bubble_links {
+    height: auto;
+    width: 80%;
+    margin: auto;
+  }
+
+  .blh_link {
+    font-size: 1.4rem;
+  }
+
+  .blh_url {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (min-device-width: 1024px) {
+  .bubble_links {
+    width: 60%;
+  }
+}

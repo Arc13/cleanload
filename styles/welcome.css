@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Signika');
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+p {
+	margin: 0px;
+}
+
+.bubble_main {
+	border-radius: 5px;
+	box-shadow: 5px 3px 30px black;
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 60%;
+	margin: auto;
+	padding: 8px;
+	position: relative;
+}
+
+.bubble_main h1 {
+	text-align: center;
+	margin: 0;
+	margin-bottom: 8px;
+	text-transform: uppercase;
+	font-family: 'Signika', 'Open Sans', sans-serif;
+	font-weight: normal;
+	opacity: 0.87;
+}
+
+.bubble_title {
+	border-bottom: solid 1px white;
+}
+
+.bubble_description_holder {
+	background: rgba(0, 0, 0, 0.3);
+	padding: 4px;
+}
+
+.bubble_description {
+	text-align: justify;
+	font-size: 0.9rem;
+}
+
+.bubble_check_holder {
+	margin-bottom: 8px;
+	text-align: center;
+}
+
+.check_ok {
+	background-color: rgb(0, 127, 0);
+}
+
+.check_fail {
+	background-color: rgb(212, 31, 25);
+}
+
+.bubble_link {
+	text-decoration: none;
+	color: white;
+}
+
+.bubble_centered_text {
+	text-align: center;
+}
+
+.bch_access {
+	display: flex;
+	align-items: center;
+}
+
+.bcha_desc {
+	flex-grow: 1;
+}
+
+.bcha_angle {
+	text-align: end;
+	margin-right: 4px;
+}
